@@ -6,9 +6,9 @@ description: Kubernetes External Secrets CustomResourceDefinition
 keywords:
   - kubernetes-external-secrets
   - secrets
-home: https://github.com/external-secrets/kubernetes-external-secrets
+home: https://github.com/shivakumar12/kubernetes-external-secrets
 sources:
-  - https://github.com/external-secrets/kubernetes-external-secrets
+  - https://github.com/shivakumar12/kubernetes-external-secrets
 maintainers:
   - name: external-secrets
     url: https://github.com/external-secrets
