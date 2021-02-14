@@ -22,7 +22,7 @@ env:
   # Print logs level as string ("info") rather than integer (30)
   # USE_HUMAN_READABLE_LOG_LEVELS: true
   METRICS_PORT: 3001
-  VAULT_ADDR: http://127.0.0.1:8200
+  VAULT_ADDR: http://0.0.0.0:8200
   # Set a role to be used when assuming roles specified in external secret (AWS only)
   # AWS_INTERMEDIATE_ROLE_ARN:
   # GOOGLE_APPLICATION_CREDENTIALS: /app/gcp-creds/gcp-creds.json
@@ -75,12 +75,12 @@ serviceAccount:
   annotations: {}
   # The name of the service account to use.
   # If not set and create is true, a name is generated using the fullname template
-  name:
+  name: kubernetes-external-secrets-sa
 
 replicaCount: 1
 
 image:
-  repository: ghcr.io/external-secrets/kubernetes-external-secrets
+  repository: github.com/shivakumar12/kubernetes-external-secrets
   tag: 6.3.0
   pullPolicy: IfNotPresent
 
